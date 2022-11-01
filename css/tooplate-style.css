@@ -137,8 +137,8 @@ footer a:link, footer a:visited {
   max-width: 575px;
 }
 .tm-section-1 {
-  margin-top: 70px;
-  max-width: 420px;
+  margin-top: 50px;
+  max-width: 520px;
 }
 
 .tm-link:link,
@@ -650,4 +650,10 @@ figure.effect-goliath:hover p {
 
 .tm-static {
   position: static;
+}
+
+/* The following code I added below. It doesn't get smaller for responsive design. I'm not sure how to position it */
+.headshot {
+  height: 25vh; 
+  padding: 2vh;
 }
