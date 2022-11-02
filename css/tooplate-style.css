@@ -657,3 +657,8 @@ figure.effect-goliath:hover p {
   height: 25vh; 
   padding: 2vh;
 }
+
+.projects {
+  height: 25%;
+  width: 25%;
+}

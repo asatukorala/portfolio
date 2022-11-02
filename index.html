@@ -56,8 +56,8 @@ http://www.tooplate.com/view/2109-the-card
             </li>
             <!-- <li class="tm-nav-item">
               <a
-                rel="nofollow" href="https://fb.com/tooplate"
-                class="tm-nav-link external">External</a>
+                rel="nofollow" href="/files/Resume.pdf"
+                class="tm-nav-link external">Resume</a>
             </li> -->
           </ul>
         </nav>
@@ -65,7 +65,7 @@ http://www.tooplate.com/view/2109-the-card
         <!-- Site header -->
         <header class="tm-site-header-box tm-bg-dark">
           <h1 class="tm-site-title">Asela Atukorala</h1>
-          <p class="mb-0 tm-site-subtitle">Information Technology | Graduate Software Engineer</p>
+          <p class="mb-0 tm-site-subtitle">Information Technology | Junior Software Engineer</p>
         </header>
         <img class="headshot" src="img/Headshot.jpg" alt="">
       </div>
@@ -116,18 +116,49 @@ http://www.tooplate.com/view/2109-the-card
                   <h2 class="tm-text-blue mb-4">Education</h2>
                   <p class="mb-4">
                     Software Engineering Immersive Course
+                    <br>
                     Aug 2022 - Oct 2022 | General Assembly Australia
                   </p>
                   <p class="mb-4">
                     Bachelor of Information Technology
+                    <br>
                     2009 - 2014 | University of South Australia 
+                  </p>
+                  <h2 class="tm-text-blue mb-4">Employment</h2>
+                  <p class="mb-4">
+                    Quality Tester 
+                    <br>
+                    Jun 2015 - Present | Aligent
                   </p>
                 </div>
               </section>
 
-              <!-- Section 2 Work (Gallery) -->
+              <!-- Section 2 Projects -->
               <section class="tm-section tm-section-2 mx-auto">
-                <div class="grid tm-gallery">
+                <div class="tm-textbox tm-textbox-2 tm-bg-dark">
+                  <h2 class="tm-text-blue mb-4">Projects</h2>
+                  <h3>Tic-Tac-Toe</h3>
+                  <a href="https://asatukorala.github.io/tic-tac-toe/">
+                    <img src="img/Tic-Tac-Toe.jpg" alt="Tic-Tac-Toe" class="projects" href="https://asatukorala.github.io/tic-tac-toe/"/>
+                  </a>
+                  <a href="https://github.com/asatukorala/tic-tac-toe">View GitHub</a>
+                  <h3>Countries App</h3>
+                  <a href="https://murmuring-river-76090.herokuapp.com/">
+                    <img src="img/Countries App.jpg" alt="Countries App" class="projects" />
+                  </a>
+                  <a href="https://github.com/asatukorala/tic-tac-toe">View GitHub</a>
+                  <h3>Keto Recipes</h3>
+                  <a href="https://infinite-wildwood-14300.herokuapp.com/">
+                    <img src="img/Keto Recipes.jpg" alt="Keto Recipes" class="projects" />
+                  </a>
+                  <a href="https://github.com/asatukorala/ketoRecipes">View GitHub</a>
+                  <h3>Lyrics App</h3>
+                  <a href="https://lyrics_app.surge.sh/">
+                    <img src="img/Lyrics App Lyrics.jpg" alt="Lyrics App" class="projects" />
+                  </a>
+                  <a href="https://github.com/asatukorala/lyric-app">View GitHub</a>
+                </div>
+                <!-- <div class="grid tm-gallery">
                   <figure class="effect-goliath tm-gallery-item">
                     <img src="img/Tic-Tac-Toe.jpg" alt="Tic-Tac-Toe" class="" />
                     <figcaption>
@@ -138,7 +169,7 @@ http://www.tooplate.com/view/2109-the-card
                       <a href="img/Tic-Tac-Toe.jpg">View more</a>
                     </figcaption>
                   </figure>
-                  <!-- <a href="https://github.com/asatukorala/tic-tac-toe">View GitHub</a> -->
+                  <a href="https://github.com/asatukorala/tic-tac-toe">View GitHub</a>
                   <figure class="effect-goliath tm-gallery-item">
                     <img src="img/Countries App.jpg" alt="Countries App" class="" />
                     <figcaption>
@@ -168,7 +199,7 @@ http://www.tooplate.com/view/2109-the-card
                       <p>View Project</p>
                       <a href="img/Lyrics App.jpg">View more</a>
                     </figcaption>
-                  </figure>
+                  </figure> -->
                   <!-- <figure class="effect-goliath tm-gallery-item">
                     <img src="img/05.jpg" alt="Image 5" class="" />
                     <figcaption>
@@ -257,7 +288,7 @@ http://www.tooplate.com/view/2109-the-card
                       <a href="img/12.jpg">View more</a>
                     </figcaption>
                   </figure> -->
-                </div>
+                <!-- </div> -->
               </section>
 
               <!-- Section 3 Contact -->
@@ -302,7 +333,7 @@ http://www.tooplate.com/view/2109-the-card
                 <div class="tm-textbox tm-textbox-2 tm-bg-dark">
                   <h2 class="tm-text-blue mb-4">Contact</h2>
                   <p class="mb-4">
-                    Send me an email to <a href="mailto:asela.atukorala@gmail.com">asela.atukorala@gmail.com</a> about job opportunities.
+                    Send me an email to <a href="mailto:asela.atukorala@gmail.com">asela.atukorala@gmail.com</a> to discuss job opportunities.
                   </p>
                 </div>
               </section>
@@ -367,10 +398,11 @@ http://www.tooplate.com/view/2109-the-card
         // Change page content
         $(`.tm-section-${previousImageId}`).fadeOut(function(e) {
           $(`.tm-section-${currentImageId}`).fadeIn();
+          setupSlider();
           // Gallery
-          if (currentImageId === 2) {
-            setupSlider();
-          }
+          // if (currentImageId === 2) {
+          //   setupSlider();
+          // }
         });
 
         adjustFooter();
@@ -495,6 +527,7 @@ http://www.tooplate.com/view/2109-the-card
             enabled: true
           }
         });
+        adjustFooter();
       }
     </script>
   </body>
