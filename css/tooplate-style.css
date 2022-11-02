@@ -136,8 +136,14 @@ footer a:link, footer a:visited {
   margin-top: 70px;
   max-width: 575px;
 }
+
 .tm-section-1 {
   margin-top: 50px;
+  max-width: 1520px;
+}
+
+.tm-section-2 {
+  margin-top: 25px;
   max-width: 1520px;
 }
 
@@ -659,6 +665,10 @@ figure.effect-goliath:hover p {
 }
 
 .projects {
-  height: 25%;
-  width: 25%;
+  height: 17vh;
+  padding-right: 2vh;
+}
+
+.container {
+  display: flex;
 }
